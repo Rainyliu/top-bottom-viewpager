@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TopBottomViewPager</string>
+    <string name="app_name">Top</string>
 
     <!-- 图片处理 -->
     <string name="crop_next_text">下一步</string>
