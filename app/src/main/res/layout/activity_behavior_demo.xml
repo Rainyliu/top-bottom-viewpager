@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_behavior_demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.rainy.topbottomviewpager.behavior.BehaviorDemoActivity">
+
+    <!--跟着别的控件动的那个设置行为属性-->
+    <TextView
+        android:id="@+id/depentent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/blue"
+        android:text="depentent"
+        android:layout_gravity="top|left"
+        android:gravity="center"
+        app:layout_behavior="com.rainy.topbottomviewpager.behavior.DependentBehavior"
+        android:textColor="@android:color/white"/>
+
+    <!--主动去动的控件要在ui中调行为里的方法触动另一个被动控件-->
+    <TextView
+        android:id="@+id/child"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/accent_red"
+        android:gravity="center"
+        android:text="auto"
+        android:layout_gravity="top|right"
+
+        android:textColor="@android:color/white"/>
+</android.support.design.widget.CoordinatorLayout>

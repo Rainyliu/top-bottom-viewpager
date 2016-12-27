@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rainy.topbottomviewpager">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ImageViewActivity" />
+        <activity android:name=".AddLableActivity" />
+        <activity android:name=".tag.MainAct" />
+        <activity android:name=".EditTextActivity" />
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".CameraBaseActivity" />
+        <activity android:name=".view.TagEditActivity" />
+        <activity android:name=".newdemo.TackPicActivity" />
+        <activity android:name=".newdemo.CropActivity" />
+        <activity android:name=".newdemo.PreViewActivity" />
+        <activity android:name=".newdemo.MonitoredActivity" />
+        <activity android:name=".newdemo.AddTagActivity" />
+        <activity android:name=".newdemo.ShowTagActivity" />
+        <activity android:name=".behavior.BehaviorDemoActivity" />
+        <activity android:name=".behavior.ScrollActivity"></activity>
+        <activity android:name=".behavior.SwipeDismissBehaviorActivity">
+        </activity>
+        <activity android:name=".timeline.TimeLineActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

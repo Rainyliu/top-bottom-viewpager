@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.rainy.topbottomviewpager.view.CenterImageView
+        android:id="@+id/goodsImage"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/images" />
+    <Button
+        android:onClick="click"
+        android:text="刷新"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

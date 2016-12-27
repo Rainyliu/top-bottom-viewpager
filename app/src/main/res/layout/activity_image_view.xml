@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_image_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rainy.topbottomviewpager.ImageViewActivity">
+
+    <com.rainy.topbottomviewpager.view.MoveTextView
+        android:text="这是一个标签"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moveTextView">
+    </com.rainy.topbottomviewpager.view.MoveTextView>
+
+    <com.rainy.topbottomviewpager.view.MoveImageView
+        android:src="@mipmap/images"
+        android:tint="@color/colorAccent"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moveImageView">
+    </com.rainy.topbottomviewpager.view.MoveImageView>
+</RelativeLayout>

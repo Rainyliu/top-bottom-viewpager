@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/loTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_picturetagview_tagview_left" >
+
+        <TextView
+            android:id="@+id/tvPictureTagLabel"
+            android:background="@null"
+            android:hint="标签"
+            android:singleLine="true"
+            android:textSize="12dp"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="@null"
+            android:id="@+id/etPictureTagLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:hint="标签"
+            android:maxEms="20"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="12dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>
